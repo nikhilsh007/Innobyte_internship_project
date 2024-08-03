@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/output.css">
+    <!-- remix icons -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>King Sukh Guest House </title>
+</head>
+<body class=" font-serif">
+    <!-- navbar -->
+    <nav class="h-[100vh] relative font-serif text-[#FFFFFF]">
+        <!-- small screen nav -->
+        <div class="h-20 w-full absolute bg-[#9DB0EC] flex items-center justify-between px-4 font-mono text-[20px] md:hidden">
+                <div class="leading-tight">
+                <h1 class="">Kingsukh</h1>
+                <h1>Guest House</h1>
+                </div>
+                <i class="ri-menu-line text-2xl" onclick="displaymenu()"></i>
+
+        </div>
+        <div class="fixed inset-0 bg-[#9DB0EC] text-2xl uppercase hidden z-40" id="menu">
+            <i class="ri-close-line text-3xl" onclick="displaypage()"></i>
+            <a href="#home" class="block text-center py-4 border-t-2 pt-8" onclick="displaypage()">Home</a>
+            <a href="#about" class="block text-center py-4" onclick="displaypage()">About</a>
+            <a href="#services" class="block text-center py-4" onclick="displaypage()">Services</a>
+            <a href="#rooms" class="block text-center py-4" onclick="displaypage()">Rooms</a>
+            <a href="#gallery" class="block text-center py-4" onclick="displaypage()">Gallary</a>
+            <a href="#contact" class="block text-center py-4" onclick="displaypage()">Contact</a>
+
+        </div>
+
+        <!-- tabs/laps nav -->
+        <div class="absolute hidden md:flex justify-between w-full text-xl px-[4vw] items-center py-8">
+            <div class="leading-tight">
+                <h1 class="">Kingsukh</h1>
+                    <h1>Guest House</h1>
+            </div>
+
+            <div class="space-x-[2vw] opacity-80 font-thin">
+            <a href="#home" class="hover:rounded-2xl hover:px-3 hover:py-2 hover:bg-blue-300 transition-all ">Home</a>
+            <a href="#about" class="hover:rounded-2xl hover:px-3 hover:py-2 hover:bg-blue-300 transition-all ">About</a>
+            <a href="#services" class="hover:rounded-2xl hover:px-3 hover:py-2 hover:bg-blue-300 transition-all ">Services</a>
+            <a href="#rooms" class="hover:rounded-2xl hover:px-3 hover:py-2 hover:bg-blue-300 transition-all ">Rooms</a>
+            <a href="#gallery" class="hover:rounded-2xl hover:px-3 hover:py-2 hover:bg-blue-300 transition-all ">Gallery</a>
+            <a href="#contact" class="hover:rounded-2xl hover:px-3 hover:py-2 hover:bg-blue-300 transition-all ">Contact</a>
+            </div>
+        </div>
+
+        <div class="absolute w-full h-full flex flex-col items-center top-[35%] md:top-[30%]" id="home">
+            <h4 class="mx-auto text-[3.5vw] mb-4 opacity-80 sm:text-lg md:mb-6">Simple - Unique - Friendly</h4>
+            <h1 class="mx-[2vw] text-[7vw] text-center opacity-90 leading-tight md:text-[5vw]">Make Yourself At Home In Our <span class="text-[#9DB0EC] opacity-95 md:block">Guest House</span></h1>
+            <button class="mt-8 text-[3vw] md:text-lg md:px-4 md:py-3 uppercase bg-[#9DB0EC] px-2 py-1 rounded-md lg:tracking-[0.1em] lg:hover:bg-black lg:hover:translate-x-2 lg:hover:-translate-y-2 transition ease-in-out delay-400 duration-300"><span class="opacity-80 ">Book Now</span></button>
+        </div>
+
+        
+        <img src="ayodhya.webp" alt="" class="w-full h-full">
+   
+    </nav>
+
+<!-- ABOUT US -->
+    <div class="h-auto bg-white md:flex w-full md:my-12 md:space-y-14 lg:space-y-12" id="about">
+        <div class="h-[65vh] pt-8 md:w-1/2 md:h-[50vw] md:max-h-[500px] max-w-[650px]">
+            <img src="out.jpg" alt="" class="h-full mx-auto rounded-md border-1 md:pl-4 md:my-2">
+        </div>
+
+        <div class="text-white py-4 px-3  m-4 rounded-lg h-auto md:w-1/2 md:mt-8 md:h-fit md:text-[1.5vw] lg:text-lg ">
+            <h4 class="text-sm uppercase font-thin text-black opacity-90 pb-2 tracking-[0.25em]md:text-pink-500 lg:text-xl">About us</h4>
+            <h2 class="text-black font-semibold pb-2 text-lg tracking-wide lg:text-3xl lg:mb-2">The Best Holidays Start Here!</h2>
+            <p class="leading-2 text-blue-800 opacity-9800 opacity-100">Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay.</p>
+            <h4 class="mt-2 text-yellow-800 lg:mb-1"><span class="text-black font-bold">Address:</span> Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</h4>
+            <h4 class="text-yellow-800 lg:mb-[1vw]"><span class="font-bold text-black">Contact us:</span> +91 9007062180</h4>
+            <button class="mt-4 px-4 bg-black rounded-lg py-2">Book Now</button>
+        </div>
+
+    </div>
+
+    <!-- LIVING ROOM -->
+    <div class=" w-full mt-10" id="rooms">
+        <h2 class="text-center text-base font-thin opacity-90 uppercase md:mt-24 md:text-xl">Our living room</h2>
+
+        <h4 class="px-4 mt-2 text-xl font-bold leading-1 tracking-wide md:text-[2.5vw] lg:text-3xl md:mt-4">The Most Memorable Rest Time Starts Here.</h4>
+
+        <div class="w-full sm:flex sm:space-x-8">
+            <div class="mx-4 mt-12 bg-[#9DB0EC] p-3 rounded-md shadow-lg shadow-gray-800 sm:max-w-[400px]">
+                <img src="small.jpg" alt="" class="rounded-md">
+                <div class="text-white mt-4">
+                    <h5 class="text-xl text-black font-bold tracking-wide">Cozy Heaven Room</h5>
+                    <p class="text-lg mt-2 text-gray-800">Escape to comfort in  our Cozy Heaven Room, a snug retreat designed for intimate relaxation.</p>
+                    <p class="mt-2 text-lg text-gray-800">Starting from <span class="text-black font-semibold">Rs. 1000/night</span></p>
+                    <button class="mt-6 px-4 bg-black rounded-lg py-2">Book Now</button>
+                </div>
+            </div>
+
+            <div class="mx-4 mt-12 bg-[#9DB0EC] p-3 rounded-md shadow-lg shadow-gray-800 sm:max-w-[400px]">
+                <img src="room1.jpg" alt="" class="rounded-md">
+                <div class="text-white mt-4">
+                    <h5 class="text-xl text-black font-bold tracking-wide">Spacious Serenity Suite</h5>
+                    <p class="text-lg mt-2 text-gray-800">Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.</p>
+                    <p class="mt-2 text-lg text-gray-800">Starting from <span class="text-black font-semibold">Rs. 1500/night</span></p>
+                    <button class="mt-6 px-4 bg-black rounded-lg py-2">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DASHBOARD -->
+
+    <div class="w-full mt-20 relative z-10" id="services">
+        <img src="palash.webp" alt="" class="w-full max-h-[650px]">
+        <div class="absolute inset-2 sm:my-0 ">
+            <div class="w-full bg-white opacity-80 mt-4 sm:h-[75%] rounded-md py-4 sm:py-0">
+                <h2 class="uppercase text-base w-fit mx-auto font-thin opacity-90 uppercase md:text-xl tracking-wide sm:pt-4">services</h2>
+                <h4 class="text-center text-lg mb-4 font-bold pt-2 sm:mb-6 text-xl font-bold leading-1 tracking-wide md:text-[2.5vw] lg:text-3xl">Strive Only For The Best</h4>
+                <div class="grid grid-cols-2 gap-y-4 sm:gap-y-8 sm:px-3 md:gap-y-[4vw] lg:pl-12 lg:mt-12">
+                    <div class="flex items-center xl:space-x-2">
+                        <div class="h-8 w-8 m-2 rounded-full flex items-center justify-center bg-purple-200 opacity-80 sm:h-12 sm:w-12">
+                    <i class="ri-shield-star-line  text-purple-800 opacity-100 sm:text-2xl"></i>
+                </div>
+                    <p class="sm:text-lg md:text-[2vw]">High Class Security</p>
+                </div>
+
+                <div class="flex items-center xl:space-x-2">
+                    <div class="h-8 w-8 bg-blue-200 m-2 rounded-full flex items-center justify-center sm:h-12 sm:w-12">
+                <i class="ri-24-hours-line text-blue-800 sm:text-2xl"></i>
+            </div>
+                <p class="sm:text-lg md:text-[2vw] ">24 Hours Service Room</p>
+            </div>
+
+            <div class="flex items-center xl:space-x-2">
+                <div class="h-8 w-8 bg-pink-200 m-2 rounded-full flex items-center justify-center sm:h-12 sm:w-12">
+            <i class="ri-restaurant-2-fill text-pink-800 sm:text-2xl"></i>
+        </div>
+            <p class="sm:text-lg md:text-[2vw]">Restaurant</p>
+        </div>
+
+        <div class="flex items-center xl:space-x-2">
+            <div class="h-8 w-8 bg-gray-400 m-2 rounded-full flex items-center justify-center sm:h-12 sm:w-12">
+        <i class="ri-map-2-line text-black sm:text-2xl"></i>
+    </div>
+        <p class="sm:text-lg md:text-[2vw]">Tourist Guide Support</p>
+    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="w-full px-4 z-20 relative hidden sm:block">
+        <div class="bg-blue-400 h-24 rounded-lg -mt-8 lg:h-32 shadow-lg shadow-gray-800">
+            <div class="grid grid-cols-2 py-4 lg:py-8">
+                <div class="text-center lg:space-y-2">
+                <p class="text-white text-lg lg:text-[2vw]">100+</p>
+                <p class="text-gray-800 text-sm lg:text-lg">Bookings completed</p>
+            </div>
+
+            <div class="text-center lg:space-y-2">
+                <p class="text-white text-lg lg:text-[2vw]">150+</p>
+                <p class="text-gray-800 text-sm lg:text-lg">Happy Customers</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+     <h2 class="text-center text-base font-thin opacity-90 uppercase md:mt-24 md:text-xl mt-8" id="gallery">gallery</h2>
+     <div class="imgcontainer mt-8 grid grid-cols-2 lg:grid-cols-4">
+        <div class="h-[417px] md:h-[550px] lg:col-span-1">
+            <img src="out.jpg" alt="" class="h-full w-full">
+        </div>
+
+        <div class="h-[417px] md:h-[550px]">
+        <div class="h-1/2">
+            <img src="large.jpg" alt="" class="h-full w-full">
+        </div>
+        <div class="h-1/2">
+            <img src="palash.webp" alt="" class="h-full w-full">
+        </div>
+    </div>
+
+        <div class="col-span-2 lg:h-full ">
+            <img src="ayodhya.webp" alt="" class="w-full lg:h-full">
+        </div>
+        <div class="h-[245px] md:h-[400px]">
+            <img src="recep.jpg" alt="" class="w-full min-h-full md:max-h-[400px]">
+        </div>
+        <div class="h-[245] md:h-[400px]">
+        <div class="h-1/2">
+            <img src="baranti.webp" alt="" class="h-full w-full">
+        </div>
+        <div class="h-1/2 ">
+            <img src="mithonDam.webp" alt="" class="h-full w-full">
+        </div>
+    </div>
+        <div>
+            <img src="flower.jpg" alt="" class="h-[250px] md:h-[400px] w-full">
+        </div>
+        <div>
+            <img src="room1.jpg" alt="" class="h-[250px] md:h-[400px] w-full">
+        </div>
+     </div>
+
+     <!-- FORM -->
+      <div class="px-12 mt-24 " id="contact">
+        <div class="w-full bg-[#9DB0EC] rounded-lg pb-4 md:grid grid-cols-2 max-w-3xl md:mx-auto shadow-lg shadow-gray-800">
+            <div>
+            <h2 class="text-lg ml-6 py-4 font-bold">Send a Message</h2>
+            <form action="">
+            <input type="text" class="bg-[#9DB0EC] w-[80%] ml-8 h-12 mb-4 border-b-2 border-gray-200  placeholder-black placeholder:font-thin placeholder:text-sm focus:outline-none" placeholder="First Name">
+
+            <input type="text" class="bg-[#9DB0EC] w-[80%] ml-8 h-12 mb-4 border-b-2 border-gray-200  placeholder-black placeholder:font-thin placeholder:text-sm focus:outline-none" placeholder="Last Name">
+
+            <input type="email" class="bg-[#9DB0EC] w-[80%] ml-8 h-12 mb-4 border-b-2 border-gray-200  placeholder-black placeholder:font-thin placeholder:text-sm focus:outline-none" placeholder="Email Address">
+
+            <input type="number" class="bg-[#9DB0EC] w-[80%] ml-8 h-12 mb-4 border-b-2 border-gray-200 placeholder-black placeholder:font-thin placeholder:text-sm focus:outline-none" placeholder="Mobile Number">
+            <textarea name="" id=""  class="bg-[#9DB0EC] w-[80%] ml-8 h-24 border-b-2 border-gray-200 placeholder-black placeholder:font-thin placeholder:text-sm focus:outline-none max-h-32" placeholder="Write your text here"></textarea>
+
+            <button class="px-8 py-1 bg-black text-white rounded-2xl ml-8 mt-4">Send</button>
+
+        </form>
+    </div>
+
+    <div class="contactinfo p-4 hidden md:block">
+        <div class="bg-white h-full rounded-lg pt-2 pl-8 pr-2 shadow-lg shadow-gray-800">
+        <h2 class="text-lg font-semibold mb-4">Contact Info</h2>
+        <ul>
+            <li class="flex gap-2">
+                <i class="ri-map-pin-line text-lg font-semibold"></i>
+                <p class="text-sm font-thin">Beside Barshal Water Tank,
+                    Manpur, Barhanti,
+                    West Bengal 723156</p>
+            </li>
+
+            <li class="flex gap-2 mt-2">
+                <i class="ri-mail-open-line text-lg font-semibold"></i>
+                <p class="text-sm font-thin">kkghosh0099@gmail.com</p>
+            </li>
+            <li class="flex gap-2 mt-2">
+                <i class="ri-phone-line text-lg font-semibold"></i>
+                <p class="text-sm font-thin">+91 9007062180</p>
+            </li>
+            
+        </ul>
+        <div class="w-full h-60">
+            <ul class="flex w-full h-full justify-end items-end gap-2 text-lg pr-4">
+                <li><i class="ri-facebook-fill"></i></li>
+                <li><i class="ri-instagram-fill"></i></li>
+                <li><i class="ri-twitter-x-line"></i></li>
+                <li><i class="ri-linkedin-fill"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+            
+        </div>
+      </div>
+
+      <!-- MAP -->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5017351225647!2d86.85721547510981!3d23.586332378782714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1705088034844!5m2!1sen!2sin" frameborder="0" class="h-[400px] w-full mt-6"></iframe>
+
+       <!-- FOOTER -->
+        <div class="bg-[#9DB0EC] w-full pt-12 px-2 sm:grid sm:grid-cols-2 sm:gap-8 lg:grid-cols-4 sm:pl-6 xl:px-24" >
+            <div class="">
+                <h3 class="font-bold text-lg mb-2 text-gray-200">Kingsukh Guest House</h3>
+                <p class="text-gray-800">Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your getaway truly extraordinary.</p>
+                <button class="mt-4 px-4 bg-black rounded-lg py-2 text-white">Book Now</button>
+            </div>
+            <div class="mt-8 sm:mt-0">
+                <h3 class="font-bold text-lg mb-2 text-gray-200 uppercase">Quick Links</h3>
+                <ul class="text-gray-800 space-y-2">
+                <li>Browse Destinations</li>
+                <li>Special Offers & Packages</li>
+                <li>Room Types & Amenities</li>
+                <li>Customer Reviews & Ratings</li>
+                <li>Travel Tips & Guides
+                </li>
+            </ul>
+            </div>
+            <div class="mt-8 lg:mt-0">
+                <h3 class="font-bold text-lg mb-2 text-gray-200 uppercase">our services</h3>
+                <ul class="text-gray-800 space-y-2">
+                    <li>Concierge Assistance</li>
+                    <li>Flexible Booking Options</li>
+                    <li>Airport Transfers</li>
+                    <li>Wellness & Recreation</li>
+                </ul>
+            </div>
+            <div class="mt-8 lg:mt-0">
+                <h3 class="font-bold text-lg mb-2 text-gray-200 uppercase">contact us</h3>
+                <ul class="text-gray-800 space-y-2">
+                    <li>Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156
+                    </li>
+                    <li>kkghosh0099@gmail.com</li>
+                    <li>+91 9007062180</li>
+                    <ul class="flex gap-2 pt-8 ">
+                        <li>
+                            <img src="facebook.png" alt="" class="h-8">
+                        </li>
+                        <li>
+                            <img src="instagram.png" alt="" class="h-8">
+                        </li>
+                        <li><img src="youtube.png" alt="" class="h-8"></li>
+                        <li><img src="twitter.png" alt="" class="h-8"></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+  
+    <script src = "script.js"></script>
+</body>
+</html>
